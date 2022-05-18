@@ -1,5 +1,7 @@
 import './App.css';
-import Navbar from './Navbar'; //* se importa desde la etiqueta Navbar
+import Navbar from './components/Navbar'; //* se importa desde la etiqueta Navbar
+
+
 
 const App = ()  => {
   return (

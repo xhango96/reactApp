@@ -1,4 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CartWidget from "./CartWidget";
+import ItemListContainer from './ItemListContainer';
+
 
 
 const Navbar = () => {
@@ -17,11 +20,20 @@ const Navbar = () => {
                             <a className="nav-link" href="http://localhost:3001/">Productos</a>
                             <a className="nav-link" href="http://localhost:3001/">Envios</a>
                             <a className="nav-link" href="http://localhost:3001/">Contacto</a>
+
+                            
+                            
                         </div>
                     </div>
                 </div>
             </nav>
+
+            <ItemListContainer />
+            <CartWidget />
+            
+
         </nav>
+        
     )
 }
 
