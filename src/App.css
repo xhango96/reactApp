@@ -1,8 +1,30 @@
 
+.Saludo{
+  text-align: center;
+  color: black;
+  padding-top: 50px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;  
+}
+
+.numeroCarrito{
+  color: #ff0000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline 3px solid;
+  margin-left: 20px;
+    
+}
+
+.logoCarrito{
+  color: white;
+  
+}
 
 
 .App {
   text-align: center;
+  
 }
 
 .App-logo {

@@ -7,9 +7,14 @@ import ItemListContainer from './ItemListContainer';
 const Navbar = () => {
     //* dentro del return se colocan los estilos que se inyectan en la interfaz
     return (
-        <nav className="navbar navbar-dark bg-primary">
+        <>
+        <div className='NavDos'>
+
+        
+        <nav class="navbar navbar-dark bg-primary">
             <nav className="navbar navbar-expand-lg bg-primary">
                 <div className="container-fluid">
+                   
                     <a className="navbar-brand" href="https://www.instagram.com/limpiamax_ok/">Limpia Max</a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -22,18 +27,21 @@ const Navbar = () => {
                             <a className="nav-link" href="http://localhost:3001/">Contacto</a>
 
                             
-                            
                         </div>
                     </div>
+                    
                 </div>
             </nav>
-
+            
             <ItemListContainer />
+            
             <CartWidget />
             
 
         </nav>
         
+        </div>
+        </>
     )
 }
 

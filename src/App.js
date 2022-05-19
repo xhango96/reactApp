@@ -6,12 +6,22 @@ import ItemListContainer from './components/ItemListContainer';
 const App = ()  => {
   return (
     <>
-    <div className="App">
-      <Navbar></Navbar>  
-    
-      <ItemListContainer  greeting="Limpia Max" />
+    <div className="App">     
     
     </div>
+
+
+    <div className="NavBar">
+      <Navbar></Navbar> 
+    </div>
+
+
+     <div className='Saludo'>
+        <ItemListContainer  greeting="Limpia Max" />
+     </div>
+    
+      
+
     </>
 
     
