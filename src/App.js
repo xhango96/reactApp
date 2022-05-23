@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar'; //* se importa desde la etiqueta Navbar
 import ItemListContainer from './components/ItemListContainer';
+import ItemCount from './components/ItemCount';
 
 
 const App = ()  => {
@@ -18,6 +19,10 @@ const App = ()  => {
 
      <div className='Saludo'>
         <ItemListContainer  greeting="Limpia Max" />
+     </div>
+
+     <div className='botonContador'>
+        <ItemCount />
      </div>
     
       

@@ -18,8 +18,16 @@
 
 .logoCarrito{
   color: white;
+  cursor: pointer;
   
 }
+
+.botonUno{
+  padding: 50px;
+}
+
+
+
 
 
 .App {
