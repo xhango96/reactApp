@@ -22,7 +22,7 @@ const App = ()  => {
      </div>
 
      <div className='botonContador'>
-        <ItemCount />
+        <ItemCount stock={5} initial={0}/>
      </div>
     
       

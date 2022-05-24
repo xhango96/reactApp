@@ -1,31 +1,44 @@
 import { useState } from "react";
 
 
-const ItemCount = () => {  
+const ItemCount = ({stock, initial}) => {  
+
+    const [amount, setAmount] = useState(initial);
 
 const increment = () => {
 
-    if (amount < 5) setAmount(amount+1);
+    if (amount < (stock)) setAmount(amount+1);
+    
     
 }
 
 const decrement = () => {
-    if (amount > 0) setAmount(amount-1);
+    if (amount > (initial)) setAmount(amount-1);
 }
 
-const [amount, setAmount] = useState(0);
+const onAdd = () => {
+    alert("Agregaste: " + amount + " items");
+
+}
+
+
     
     return (
+
+
     <>
         
         <div  className="botonUno">
 
             <p>Cantidad: {amount}</p>
             <hr></hr>
-            <button onClick={increment} type="button" class="btn btn-primary">Agregar</button>                   
-            <button onClick={decrement} type="button" class="btn btn-primary">Quitar</button> 
-                       
+            <button onClick={increment} type="button" class="btn btn-primary">Sumar</button>                   
+            <button onClick={decrement} type="button" class="btn btn-primary">Restar</button> 
+            <button color="primary" onClick={onAdd} class="btn btn-primary">Agregar al carrito</button>
+               
         </div>    
+
+        
 
     </>
 
@@ -33,4 +46,6 @@ const [amount, setAmount] = useState(0);
     
   }
 
+
+  
   export default ItemCount;
