@@ -17,7 +17,7 @@ const decrement = () => {
 }
 
 const onAdd = () => {
-    alert("Agregaste: " + amount + " items");
+    alert("Agregaste: " + amount + " items al carrito 🛒");
 
 }
 
@@ -32,8 +32,8 @@ const onAdd = () => {
 
             <p>Cantidad: {amount}</p>
             <hr></hr>
-            <button onClick={increment} type="button" class="btn btn-primary">Sumar</button>                   
-            <button onClick={decrement} type="button" class="btn btn-primary">Restar</button> 
+            <button onClick={increment} type="button" class="btn btn-primary">➕</button>                   
+            <button onClick={decrement} type="button" class="btn btn-primary">➖</button> 
             <button color="primary" onClick={onAdd} class="btn btn-primary">Agregar al carrito</button>
                
         </div>    

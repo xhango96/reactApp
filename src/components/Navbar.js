@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartWidget from "./CartWidget";
-import ItemListContainer from './ItemListContainer';
+
 
 
 
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </div>
             </nav>
             
-            <ItemListContainer />
+            
             
             <CartWidget />
             
