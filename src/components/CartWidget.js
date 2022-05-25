@@ -16,9 +16,6 @@ const CartWidget = ()  => {
                 
                 </svg> 
                
-                
-                
-                 
             </div> 
 
            
