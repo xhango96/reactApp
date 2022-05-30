@@ -3,16 +3,17 @@
   text-align: center;
   color: black;
   padding-top: 50px;
-  font-size: 30px;
+  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-decoration: underline;  
+  
 }
 
 .numeroCarrito{
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-decoration: underline 3px solid;
+  text-decoration: underline 1px solid;
   margin-left: 20px;
+  
     
 }
 

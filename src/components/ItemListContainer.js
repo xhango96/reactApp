@@ -1,8 +1,9 @@
 import ItemList from "./ItemList";
-import customFetch from "../utils/customFetch";
+import customFetch from "../utils/CustomFetch";
 import { useEffect, useState } from "react";
 import Item from "./Item";
-const {products} = require ("../utils/products");
+import ItemCount from "./ItemCount";
+const {products} = require ("../utils/Products");
 
 
 
@@ -27,8 +28,16 @@ const ItemListContainer = ()  => {
     <>
 
         <div>
+           
             <ItemList items={datos}/> 
+
             <Item/>
+
+            <h3>Limpia Max</h3>
+
+            <div className='botonContador'>
+                <ItemCount stock={5} initial={0}/>
+            </div>
              
         </div>    
 

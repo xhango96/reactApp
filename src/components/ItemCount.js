@@ -32,9 +32,9 @@ const onAdd = () => {
 
             <p>Cantidad: {amount}</p>
             <hr></hr>
-            <button onClick={increment} type="button" class="btn btn-primary">➕</button>                   
-            <button onClick={decrement} type="button" class="btn btn-primary">➖</button> 
-            <button color="primary" onClick={onAdd} class="btn btn-primary">Agregar al carrito</button>
+            <button onClick={increment} type="button" className="btn btn-primary">➕</button>                   
+            <button onClick={decrement} type="button" className="btn btn-primary">➖</button> 
+            <button color="primary" onClick={onAdd} className="btn btn-primary">Agregar al carrito</button>
                
         </div>    
 
@@ -49,3 +49,17 @@ const onAdd = () => {
 
   
   export default ItemCount;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

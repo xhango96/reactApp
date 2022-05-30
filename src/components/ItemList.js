@@ -1,24 +1,40 @@
 import Item from "./Item";
 
-const ItemList = ({ items }) => {
+
+const ItemList = (props) => {
     return (
-        <>
-        
-        {
-            items.length > 0
-            ? items.map(item => <Item key={item.id} id={item.id} title={item.name} price={item.cost} pictureUrl={item.image[0]} stock={item.stock} />)
-            :   <p>Cargando...
-                    <div class="text-center">
-                        <div class="spinner-border" role="status">
-                            <span class="visually-hidden"></span>
-                        </div>
+
+        <>        
+        {props.Item.length > 0 ? (
+            props.items.map((item) => (
+                <Item
+                id={item.id}
+                title={item.name}
+                price={item.cost}
+                pictureUrl={item.image}
+                stock={item.stock}
+                />
+
+            ))
+
+        ) : (
+
+            <div>
+                Cargando...
+                <div className="text-center">
+                    <div className="spinner-border" role="status">
+                        <span className="visually-hidden"></span>
                     </div>
-                </p>
+                </div>
+            </div>  
+   
+             
+        )
         }
-
-      
+        
         </>
-    );
-}
+    )}
+    
+    
 
-export default ItemList;
+    export default ItemList;

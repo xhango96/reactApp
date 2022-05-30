@@ -1,5 +1,5 @@
 
-const products = [{
+const Products = [{
 
     id: 1,
     name: "Jabon liquido Ariel",
@@ -10,7 +10,7 @@ const products = [{
     image: ["https://superlorito.com.ar/wp-content/uploads/2020/04/JABON-LIQUIDO-ARIEL-5L.jpg"],    
     createdAt: "2022-05-24 16:00",
     updatedAt: "2022-05-24 16:00",
-    categoryId: 1       
+    categoryId: 1        
 },
 
 {
@@ -68,5 +68,5 @@ const products = [{
 ]
 
 module.exports = {
-    products,
+    Products,
 }
