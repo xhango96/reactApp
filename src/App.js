@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar'; //* se importa desde la etiqueta Navbar
 import ItemListContainer from './components/ItemListContainer';
-import { Products } from './utils/Products';
+import { Products } from './utils/products';
 
 
 
